@@ -1,0 +1,58 @@
+﻿<h2>Register</h2>
+<div class="panel panel-default">
+  <div class="panel-body" style="border: 1px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          Codigo
+        </div>
+        <div class="col-md">
+          Nome
+        </div>
+        <div class="col-md">
+          Descricao
+        </div>
+        <div class="col-md">
+          Dominio
+        </div>
+        <div class="col-md">
+          Data
+        </div>
+        <div class="col-md">
+          Hora
+        </div>
+        <div class="col-md">Editar</div>
+        <div class="col-md">Excluir</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" *ngFor="let dominio of dominios">
+        <div class="col-md">
+          {{dominio.codigo}}
+        </div>
+        <div class="col-md">
+          {{dominio.nome}}
+        </div>
+        <div class="col-md">
+          {{dominio.descricao}}
+        </div>
+        <div class="col-md">
+          {{dominio.checked}}
+        </div>
+        <div class="col-md">
+          {{dominio.data}}
+        </div>
+        <div class="col-md">
+          {{dominio.hora}}
+        </div>
+        <div class="col-md">
+          <button type="button" class="btn btn-outline-warning">Editar</button>
+        </div>
+        <div class="col-md">
+          <button type="button" class="btn btn-outline-danger">Excluir</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

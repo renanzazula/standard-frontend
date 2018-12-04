@@ -12,6 +12,8 @@ import {AlertComponent} from './_components';
 import {HomeComponent} from './home';
 import {LoginComponent} from './login';
 import {RegisterComponent} from './register';
+import {DominioComponent} from "@app/dominio";
+import {DominioListarComponent} from "@app/dominio/listar";
 
 @NgModule({
     imports: [
@@ -25,7 +27,9 @@ import {RegisterComponent} from './register';
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        DominioComponent,
+        DominioListarComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

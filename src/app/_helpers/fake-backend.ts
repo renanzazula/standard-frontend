@@ -75,8 +75,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 }
             }
 
-            // register user
-            if (request.url.endsWith('/users/register') && request.method === 'POST') {
+            // cadastrar user
+            if (request.url.endsWith('/users/cadastrar') && request.method === 'POST') {
                 // get new user object from post body
                 let newUser = request.body;
 
