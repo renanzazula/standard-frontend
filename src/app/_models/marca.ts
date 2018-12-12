@@ -1,4 +1,4 @@
-export class Dominio {
+export class Marca {
   codigo: number;
   nome: string;
   descricao: string;

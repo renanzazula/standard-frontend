@@ -1,0 +1,37 @@
+﻿<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Gerenciar Dominios</h3>
+  </div>
+  <div class="panel-body">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let marca of marcas">
+          <td>{{marca.codigo}}</td>
+          <td>{{marca.nome}}</td>
+          <td>{{marca.descricao}}</td>
+          <td>{{marca.data}}</td>
+          <td>{{marca.hora}}</td>
+          <td>
+            <span class="glyphicon glyphicon-edit"> </span>
+          </td>
+          <td>
+            <span class="glyphicon glyphicon-trash"> </span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

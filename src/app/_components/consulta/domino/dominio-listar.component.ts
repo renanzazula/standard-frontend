@@ -2,9 +2,9 @@
 import {Router} from '@angular/router';
 import {FormBuilder} from '@angular/forms';
 
-import {AuthenticationService} from '@app/_services';
-import {DominioService} from "@app/_services/dominio.service";
-import {Dominio} from "@app/_models/dominio";
+import {AuthenticationService} from '../../../_services/index';
+import {DominioService} from "../../../_services/dominio.service";
+import {Dominio} from "../../../_models/dominio";
 
 @Component({templateUrl: 'dominio-listar.component.html'})
 export class DominioListarComponent implements OnInit {
