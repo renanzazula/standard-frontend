@@ -1,33 +1,33 @@
-﻿<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Gerenciar Dominios</h3>
+﻿<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Consultar Marca</h3>
   </div>
-  <div class="panel-body">
-    <div class="table-responsive">
-      <table class="table">
-        <thead>
+  <div class="card-body">
+    <div class="table-responsive-md">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
         <tr>
-          <th>Código</th>
-          <th>Nome</th>
-          <th>Descrição</th>
-          <th>Data</th>
-          <th>Hora</th>
-          <th>Edit</th>
-          <th>Delete</th>
+          <th scope="col">Código</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Data</th>
+          <th scope="col">Hora</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let marca of marcas">
+        <tr *ngFor="let marca of marcas" scope="row">
           <td>{{marca.codigo}}</td>
           <td>{{marca.nome}}</td>
           <td>{{marca.descricao}}</td>
           <td>{{marca.data}}</td>
           <td>{{marca.hora}}</td>
           <td>
-            <span class="glyphicon glyphicon-edit"> </span>
+            <button type="button" class="btn btn-outline-warning btn-sm">Alterar</button>
           </td>
           <td>
-            <span class="glyphicon glyphicon-trash"> </span>
+            <button type="button" class="btn btn-outline-danger btn-sm">Excluir</button>
           </td>
         </tr>
         </tbody>
